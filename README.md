@@ -1,1 +1,1 @@
-# cist1310spring2024
+# CIST 1310 Spring 2024
