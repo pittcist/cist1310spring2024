@@ -9,12 +9,16 @@
 </head>
 
 <body>
+    {% extends "bootstrap/base.html" %}
+
+    {% block content %}
     <p>
         <a href="/enternew">Add a new student</a>
     </p>
     <p>
         <a href="/list">List students</a>
     </p>
+    {% endblock %}    
 </body>
 
 </html>

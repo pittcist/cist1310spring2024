@@ -1,19 +1,24 @@
 <html>
-   <body>
+   <body>      
+      {% extends "bootstrap/base.html" %}
+
+
       <form action = "{{ url_for('addrec') }}" method = "POST">
+         {% block content %}
          <h3>Student Information</h3>
          Name<br>
-         <input type = "text" name = "nm" /></br>
+         <input type = "text" name = "nm" class="form-control"/></br>
          
          Address<br>
-         <textarea name = "addr" ></textarea><br>
+         <textarea name = "addr" class="form-control"></textarea><br>
          
          City<br>
-         <input type = "text" name = "city" /><br>
+         <input type = "text" name = "city" class="form-control"/><br>
          
          ZipCODE<br>
-         <input type = "text" name = "pin" /><br>
-         <input type = "submit" value = "submit" /><br>
+         <input type = "text" name = "pin" class="form-control"/><br>
+         <input type = "submit" value = "submit" class="btn btn-primary"/><br>
+         {% endblock %}  
       </form>
    </body>
 </html>
