@@ -1,8 +1,7 @@
 <html>
    <body>
-      {% extends "bootstrap/base.html" %}
-
       <form action = "http://localhost:5000/login" method = "post">
+         {% extends "bootstrap/base.html" %}
          {% block content %}
          <h1>Enter Name:</h1>
          <p><input type = "text" name = "nm" class="form-control"/></p>

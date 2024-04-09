@@ -1,9 +1,7 @@
 <html>
    <body>      
-      {% extends "bootstrap/base.html" %}
-
-
       <form action = "{{ url_for('addrec') }}" method = "POST">
+         {% extends "bootstrap/base.html" %}
          {% block content %}
          <h3>Student Information</h3>
          Name<br>
